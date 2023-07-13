@@ -1,4 +1,5 @@
 .card {
+  margin: 56px 0;
   width: 912px;
   min-height: 219px;
 }
@@ -28,12 +29,6 @@
   font-weight: 700;
   line-height: normal;
   padding-bottom: 6px;
-}
-
-.info-description-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .content {
@@ -78,7 +73,7 @@
 }
 
 .description {
-  margin-left: 72px;
+  margin-left: auto;
   padding: 20px 0 20px 0;
   width: 420px;
   display: flex;

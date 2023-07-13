@@ -4,7 +4,6 @@
     <app-status-component [status]="data.status"></app-status-component>
   </div>
   <div class="content">
-    <div class="info-description-wrapper">
       <div class="info">
         <span class="mini-header">Platforms it was played:</span>
         <div class="platforms-container">
@@ -24,10 +23,9 @@
         <div class="info__padding">
           <span class="info__title">Publisher: <span class="info__content">{{data.publisher}}</span></span>
         </div>
-      </div>
-      <div class="description">
-        {{data.description}}
-      </div>
+    </div>
+    <div class="description" [innerHTML]="safeDescription">
+      {{data.description}}
     </div>
     <div class="summary">
       <span class="mini-header">Modes it was played:</span>
