@@ -1,15 +1,16 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .badge {
-  min-width: 60px;
+  display: flex;
+  width: auto;
   margin: 6px 0;
   padding: 0 6px;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   border-radius: 8px;
   background: rgba(224, 224, 224, 0.10);
   color: #FFFFFF;
@@ -23,4 +24,8 @@
 .is-active {
   border: 1px solid var(--purple-1, #9B51E0);
   background: rgba(155, 81, 224, 0.10);
+}
+
+.short-badge {
+  width: 55px;
 }

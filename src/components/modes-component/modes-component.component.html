@@ -1,5 +1,5 @@
 <div class="container">
-  <div *ngFor="let mode of allModes" class="badge" [class.is-active]="modes.includes(mode)">
+  <div *ngFor="let mode of allModes" class="badge" [class.is-active]="modes.includes(mode)" [class.short-badge]="mode == 'Co-Op'">
     {{mode}}
   </div>
 </div>
