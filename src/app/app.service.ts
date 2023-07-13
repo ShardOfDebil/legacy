@@ -12,6 +12,7 @@ export interface GameCard {
   description: string;
   modesItWasPlayed: string[];
   score: string;
+  status: string;
 }
 
 export interface GameData {

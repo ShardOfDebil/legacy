@@ -1,20 +1,38 @@
 <div class="card">
   <div class="header">
     {{data.gameName}}
+    <app-status-component [status]="data.status"></app-status-component>
   </div>
   <div class="content">
-    <div class="info">
-      <span class="mini-header">Platforms it was played:</span>
-      <div *ngFor="let platform of data.platformName">
-        <app-platform-badge [platform]="platform"></app-platform-badge>
+    <div class="info-description-wrapper">
+      <div class="info">
+        <span class="mini-header">Platforms it was played:</span>
+        <div class="platforms-container">
+          <div *ngFor="let platform of data.platformName">
+            <app-platform-badge [platform]="platform"></app-platform-badge>
+          </div>
+        </div>
+        <div class="info__padding">
+          <span class="info__title">Release date: <span class="info__content">{{data.releaseDate}}</span></span>
+        </div>
+        <div class="info__padding">
+          <span class="info__title">Genre: <span class="info__content">{{data.genre}}</span></span>
+        </div>
+        <div class="info__padding">
+          <span class="info__title">Developer: <span class="info__content">{{data.developer}}</span></span>
+        </div>
+        <div class="info__padding">
+          <span class="info__title">Publisher: <span class="info__content">{{data.publisher}}</span></span>
+        </div>
       </div>
-      <span class="info__title">Release date: <span class="info__content">{{data.releaseDate}}</span></span>
-      <span class="info__title">Genre: <span class="info__content">{{data.genre}}</span></span>
-      <span class="info__title">Developer: <span class="info__content">{{data.developer}}</span></span>
-      <span class="info__title">Publisher: <span class="info__content">{{data.publisher}}</span></span>
+      <div class="description">
+        {{data.description}}
+      </div>
     </div>
-<!--    <div class="description">-->
-<!--      {{data.description}}-->
-<!--    </div>-->
+    <div class="summary">
+      <span class="mini-header">Modes it was played:</span>
+      <app-modes-component [modes]="data.modesItWasPlayed"></app-modes-component>
+      <app-score-component [score]="data.score"></app-score-component>
+    </div>
   </div>
 </div>

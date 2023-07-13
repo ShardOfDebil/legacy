@@ -1,0 +1,27 @@
+:host {
+  font-family: Lato, serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.legendary {
+  color: #F5B300;
+}
+
+.excellent {
+  color: var(--purple-2, #BB6BD9);
+}
+
+.good {
+  color: var(--blue-1, #2F80ED);
+}
+
+.mediocre {
+  color: var(--green-1, #219653);
+}
+
+.crap {
+  color: #977F74;
+}
